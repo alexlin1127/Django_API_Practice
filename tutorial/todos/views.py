@@ -4,9 +4,13 @@
 功能: 建立Teacher, Student的API接口，及對應的CRUD操作
 '''
 
+# third-party
 from rest_framework import viewsets
+
+#app
 from .models import Teachers, Students
 from .serializers import StudentSerializer, TeacherSerializer
+
 
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = Students.objects.all()
