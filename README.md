@@ -76,7 +76,7 @@ Django_API_Practice/
 
 1. **複製專案**
    ```bash
-   git clone [<repository-url>](https://github.com/alexlin1127/Django_API_Practice.git)
+   git clone https://github.com/alexlin1127/Django_API_Practice.git
    cd Django_API_Practice
    ```
 
