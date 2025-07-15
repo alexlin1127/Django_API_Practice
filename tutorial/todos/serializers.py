@@ -5,10 +5,10 @@
 物件: Teachers, Students
 '''
 
-# third-party module
+# third-party
 from rest_framework import serializers
 
-# self-define module
+# app
 from .models import Teachers, Students
 
 
