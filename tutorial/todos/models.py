@@ -9,7 +9,7 @@ from django.db import models
 
 class Teachers(models.Model):
     name = models.CharField(max_length=50)
-    email = models.EmailField(unique=True, null=True, blank=True)
+    email = models.EmailField(unique=True)
     subject = models.CharField(max_length=32)
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -18,7 +18,7 @@ class Teachers(models.Model):
     
 class Students(models.Model):
     name = models.CharField(max_length=50)
-    email = models.EmailField(unique=True, null=True, blank=True)
+    email = models.EmailField(unique=True)
     grade = models.IntegerField()
     enrolled_at = models.DateTimeField(auto_now_add=True)
 
