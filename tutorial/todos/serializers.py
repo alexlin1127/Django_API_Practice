@@ -62,7 +62,14 @@ class StudentSerializer(serializers.ModelSerializer):
     )
 
     teacher_name = serializers.CharField(source='teacher.name', read_only=True)
+    
+    # 用於選擇老師，下拉選單 => 顯示老師名字 (僅輸入時顯示)
+    teacher = serializers.SlugRelatedField(
+        queryset=Teachers.objects.all(),
+        slug_field='name',
+        write_only=True
+    )
 
     class Meta:
         model = Students
-        fields = '__all__'
+        fields = ['id', 'name', 'email', 'grade', 'enrolled_at', 'teacher_name', 'teacher']
