@@ -66,4 +66,3 @@ class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Students
         fields = '__all__'
-        exclude = ['teacher']
