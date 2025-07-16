@@ -55,7 +55,7 @@ Django_API_Practice/
 - `email`: 電子郵件 (EmailField, unique=True)
 - `grade`: 年級 (IntegerField)
 - `enrolled_at`: 入學時間 (DateTimeField, auto_now_add=True)
-- `teacher`: 關聯老師 (ForeignKey to Teachers)
+- `teacher_name`: 關聯老師姓名 (ForeignKey to Teachers)
 
 ## 安裝與運行
 
@@ -66,10 +66,9 @@ Django_API_Practice/
 > **安裝 uv**: 
 > ```bash
 > # Windows
-> powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-> 
+> pip install uv 
 > # macOS/Linux
-> curl -LsSf https://astral.sh/uv/install.sh | sh
+> brew install uv
 > ```
 
 ### 安裝步驟
@@ -82,7 +81,8 @@ Django_API_Practice/
 
 2. **安裝專案依賴**
    ```bash
-   uv sync #會自動創建虛擬環境並安裝所有依賴
+   uv sync  # 會自動創建虛擬環境並安裝所有依賴
+
    ```
 
 3. **資料庫遷移**
@@ -96,7 +96,7 @@ Django_API_Practice/
    uv run python manage.py createsuperuser
    ```
 
-5. **啟動開發服務器**
+5. **啟動開發伺服器**
    ```bash
    uv run python manage.py runserver
    ```
