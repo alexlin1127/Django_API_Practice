@@ -1,5 +1,5 @@
 '''
-檔案:models.py
+檔案: models.py
 作者: Alex LIN
 功能: 建立DB模型(Table) --> python 物件
 物件: Teachers, Students

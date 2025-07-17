@@ -1,5 +1,5 @@
 '''
-檔案:serializer.py
+檔案: serializer.py
 作者: Alex LIN
 功能: 將model建立的python物件轉換為json格式
 物件: Teachers, Students

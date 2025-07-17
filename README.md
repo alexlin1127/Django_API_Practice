@@ -111,20 +111,20 @@ http://127.0.0.1:8000/api
 ```
 
 ### 老師管理 API
-- `GET /api/teachers/`         - 獲取所有老師列表
-- `POST /api/teachers/`        - 創建新老師
-- `GET /api/teachers/{id}/`    - 獲取特定老師詳情
-- `PUT /api/teachers/{id}/`    - 更新老師信息
-- `PATCH /api/teachers/{id}/`  - 部分更新老師信息
-- `DELETE /api/teachers/{id}/` - 刪除老師
+- `GET /api/teachers`         - 獲取所有老師列表
+- `POST /api/teachers`        - 創建新老師
+- `GET /api/teachers/{id}`    - 獲取特定老師詳情
+- `PUT /api/teachers/{id}`    - 更新老師信息
+- `PATCH /api/teachers/{id}`  - 部分更新老師信息
+- `DELETE /api/teachers/{id}` - 刪除老師
 
 ### 學生管理 API
-- `GET /api/students/`         - 獲取所有學生列表
-- `POST /api/students/`        - 創建新學生
-- `GET /api/students/{id}/`    - 獲取特定學生詳情
-- `PUT /api/students/{id}/`    - 更新學生信息
-- `PATCH /api/students/{id}/`  - 部分更新學生信息
-- `DELETE /api/students/{id}/` - 刪除學生
+- `GET /api/students`         - 獲取所有學生列表
+- `POST /api/students`        - 創建新學生
+- `GET /api/students/{id}`    - 獲取特定學生詳情
+- `PUT /api/students/{id}`    - 更新學生信息
+- `PATCH /api/students/{id}`  - 部分更新學生信息
+- `DELETE /api/students/{id}` - 刪除學生
 
 ### API 測試工具
 - Django REST Framework API URL: `http://127.0.0.1:8000/api`
