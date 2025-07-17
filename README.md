@@ -117,6 +117,8 @@ http://127.0.0.1:8000/api
 - `PUT /api/teachers/{id}`    - 更新老師信息
 - `PATCH /api/teachers/{id}`  - 部分更新老師信息
 - `DELETE /api/teachers/{id}` - 刪除老師
+- `GET /api/teachers/{id}/showStudent` - 獲取特定老師對應的學生資訊
+
 
 ### 學生管理 API
 - `GET /api/students`         - 獲取所有學生列表
@@ -143,3 +145,4 @@ Alex LIN
 
 ## 版本
 初版 --2025.07.15
+修訂版v2 -- 2025.07.17 (新增教師API路由，可顯示特定老師對應的所有學生)
