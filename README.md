@@ -127,6 +127,7 @@ http://127.0.0.1:8000/api
 - `PUT /api/students/{id}`    - 更新學生信息
 - `PATCH /api/students/{id}`  - 部分更新學生信息
 - `DELETE /api/students/{id}` - 刪除學生
+- `GET /api/students/{id}/image` - 獲取特定學生的圖片
 
 ### API 測試工具
 - Django REST Framework API URL: `http://127.0.0.1:8000/api`
@@ -144,5 +145,6 @@ http://127.0.0.1:8000/api
 Alex LIN
 
 ## 版本
-初版 --2025.07.15
-修訂版v2 -- 2025.07.17 (新增教師API路由，可顯示特定老師對應的所有學生)
+- 初版 --2025.07.15
+- 修訂版v1.2 -- 2025.07.17 (新增教師API路由，可顯示特定老師對應的所有學生)
+- 修訂版v1.3 -- 2025.07.18 (新增學生API路由，可顯示特定學生的image / 新增上傳欄位-student_image)
