@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'tutorial.todos'
+    'tutorial.todos',
+    'django_apscheduler'
 ]
 
 MIDDLEWARE = [
