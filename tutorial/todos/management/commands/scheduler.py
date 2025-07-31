@@ -11,7 +11,6 @@ class Command(BaseCommand):
     help = 'start django scheduler... '
 
     def handle(self, *args, **options):
-        scheduler = BlockingScheduler()
         scheduler.remove_all_jobs()
 
         scheduler.add_job(
